@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Mario World Google Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <h1>Explore the Super Mario World!!!</h1>
+        <br>
+        <h3>Dark/Light Mode</h3>
+      </div>
+      <div class="toggle__wrapper">
+        <input type="radio" name="theme" id="light" />
+        <input type="radio" name="theme" id="dark" />
+        <span class="toggle__background"></span>
+        <span class="toggle__button"></span>
+      </div>
+    </div>
+    <div id="map"></div>
+
+    <script src="script.js"></script>
+
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhb7AniH_u0kFYSqvdw6aj28ScALlw6gY&callback=initMap"
+    ></script>
+  </body>
+</html>
